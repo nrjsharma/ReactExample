@@ -24,7 +24,11 @@ class App extends Component {
       <div className="App">
         <h1>hello i am react</h1>
         <button onClick={this.switchNameHandler}>Switch Name</button>
-        <Person name = {this.state.person[0].name} age={this.state.person[0].age}/>
+        <Person
+         name = {this.state.person[0].name} 
+         age = {this.state.person[0].age}
+         click = {this.switchNameHandler} 
+         />
         <Person name = {this.state.person[1].name} age={this.state.person[1].age}>This is a children text</Person>
       </div>
     );
